@@ -1,1 +1,35 @@
 /*Static part of page*/
+body {
+    background-color: #F8F9FA;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+header {
+    background-color: #0078D7;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    color: #F8F9FA;
+}
+.mainSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+}
+.mainSection .container {
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*This section contains the first page content produced by javascript*/
