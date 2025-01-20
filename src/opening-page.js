@@ -1,14 +1,8 @@
+import { openingButtons } from ".";
+
 //This module will display all of the opening content for the application
-//All the buttons will start out as false and trigger when clicked.
-export const openingButtons = {
-    poundsButton: false,
-    kilogramButton: false,
-    caloriesButton: false,
-    kilojoulesButton: false,
-};
 
 const enterButtonSelection = false;
-
 const mainSection = document.querySelector('.mainSection');
 const container = mainSection.querySelector('.container');
 
@@ -54,6 +48,7 @@ function enterButton() {
 
     const enterButton = document.createElement('button');
     enterButton.classList.add('enterButton');
+    enterButton.classList.add('openPageButtons')
     enterButton.textContent = 'Select';
 
     enterButton.disabled = true;
@@ -63,7 +58,6 @@ function enterButton() {
     container.appendChild(enterButtonContainer);
 }
 
-
 //Uses above functions and exports to the main code to make the opening page
 export function openingPageContent() {
     openingWriteUp();
@@ -72,12 +66,10 @@ export function openingPageContent() {
     enterButton();
 }
 
-
-
 //Creating the functionality of the buttons
 export function selection() {
     let buttons = document.querySelectorAll('.openPageButtons');
-
+    
     buttons.forEach((button) => {
         button.addEventListener('click', (event) => {
             if(event.target.classList.contains('PoundsButton')) {
@@ -96,6 +88,9 @@ export function selection() {
                 openingButtons.caloriesButton = false;
                 openingButtons.kilojoulesButton = true;
                 console.log(openingButtons);
+            }
+            if (event.target.classList.contains('enterButton')) {
+                container.innerHTML = '';
             }
             changeButtonStatus();
         })
@@ -134,3 +129,4 @@ function changeButtonStatus() {
         selectButton.disabled = false;
     }
 }
+
