@@ -33,3 +33,61 @@ header {
 
 
 /*This section contains the first page content produced by javascript*/
+.writeUpContainer h3 {
+    text-align: center;
+}
+
+.openPageButtons {
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #0078D7;
+    color: #F8F9FA;
+    border: none;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.openPageButtons:hover {
+    opacity: 0.5;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.enterButtonsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.enterButtonsContainer .enterButton {
+    height: 50px;
+    width: 150px;
+    font-size: x-large;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: #72B01D;
+    color: #F8F9FA;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.enterButtonsContainer .enterButton:hover {
+    opacity: 0.5;
+}
+
+button:disabled {
+    cursor: none;
+    opacity: 0.5;
+}
+.enterButton:disabled {
+    cursor: none;
+    opacity: 0.5;
+}
+
