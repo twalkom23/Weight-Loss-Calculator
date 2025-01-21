@@ -1,4 +1,5 @@
 import { openingButtons } from ".";
+import { displayEnergyBurntPage } from "./energy-burnt";
 
 //This module will display all of the opening content for the application
 
@@ -69,6 +70,7 @@ export function openingPageContent() {
 //Creating the functionality of the buttons
 export function selection() {
     let buttons = document.querySelectorAll('.openPageButtons');
+    let count = 0;
     
     buttons.forEach((button) => {
         button.addEventListener('click', (event) => {
@@ -91,8 +93,15 @@ export function selection() {
             }
             if (event.target.classList.contains('enterButton')) {
                 container.innerHTML = '';
+                count++;
+                displayEnergyBurntPage();
             }
-            changeButtonStatus();
+
+            //This just stops it from running the change button status when enter button is selected.
+            if (count === 0){
+                changeButtonStatus();
+            }
+            
         })
     })
 }
