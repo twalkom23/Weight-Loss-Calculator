@@ -49,19 +49,23 @@ function createForm (metric) {
         input.type = 'number';
         input.id = day.toLowerCase();
         input.name = day.toLowerCase();
-        input.placeholder = `${metric} burned on ${day}`;
+        input.placeholder = `${metric} burnt`;
         input.required = true;
 
         holder.appendChild(label);
         holder.appendChild(input);
         form.appendChild(holder);
     })
-
+    const buttonHolder = document.createElement('div');
     const button = document.createElement('button');
     button.type = 'submit';
     button.textContent = 'Submit';
-    form.appendChild(button);
+    buttonHolder.appendChild(button);
+    form.appendChild(buttonHolder);
 
     formContainer.appendChild(form);
     container.appendChild(formContainer);
 }
+
+
+

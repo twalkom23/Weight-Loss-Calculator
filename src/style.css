@@ -93,3 +93,62 @@ button:disabled {
 
 
 /*This section will contain the energy burnt section*/
+.container .energyBurntWriteUp {
+    text-align: center;
+}
+.energyBurntFormContainer form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.energyBurntFormContainer form div {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    align-items: center;
+}
+
+.energyBurntFormContainer form button {
+    height: 50%;
+    width: 20%;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: center;
+    justify-self: end;
+    height: 30px;
+    width: 150px;
+    font-size: regular;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: #72B01D;
+    color: #F8F9FA;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.energyBurntFormContainer form div input {
+    border: none;
+    border-radius: 10px;
+    background-color: #0078D7;
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    color: #F8F9FA;
+    font-weight: bold;
+}
+
+.energyBurntFormContainer form div input::placeholder {
+    color: #F8F9FA;
+    font-weight: bold;
+}
+
+.energyBurntFormContainer form div label {
+    font-weight: bold;
+    font-size: large;
+}
