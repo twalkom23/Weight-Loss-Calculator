@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import { openingPageContent, selection } from './opening-page';
+import { handleEnergyBurntForm } from './energy-burnt';
 
 export const openingButtons = {
     poundsButton: false,
@@ -16,8 +17,10 @@ export const energyBurnt = {
     thursday: 0,
     friday: 0,
     saturday: 0, 
-    sunday: 0
+    sunday: 0,
+    total: 0
 }
+
 
 export const energyConsumed = {
     monday: 0,
@@ -26,9 +29,9 @@ export const energyConsumed = {
     thursday: 0,
     friday: 0,
     saturday: 0,
-    sunday: 0
+    sunday: 0,
+    total: 0
 }
-
 
 
 //In opening page
@@ -41,3 +44,4 @@ selection();
 
 
 //The second page which takes in the energy burnt input.
+handleEnergyBurntForm();
