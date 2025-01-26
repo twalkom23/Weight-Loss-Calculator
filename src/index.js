@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import { openingPageContent, selection } from './opening-page';
-import { handleEnergyBurntForm } from './energy-burnt';
+import { handleForm } from './inputPages';
 
 export const openingButtons = {
     poundsButton: false,
@@ -44,4 +44,4 @@ selection();
 
 
 //The second page which takes in the energy burnt input.
-handleEnergyBurntForm();
+handleForm();

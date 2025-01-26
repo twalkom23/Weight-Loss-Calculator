@@ -1,5 +1,5 @@
 import { openingButtons } from ".";
-import { displayEnergyBurntPage } from "./energy-burnt";
+import { displayEnergyBurntPage } from "./inputPages";
 
 //This module will display all of the opening content for the application
 
