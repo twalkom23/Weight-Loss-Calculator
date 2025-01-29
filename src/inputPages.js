@@ -1,5 +1,5 @@
 import { openingButtons, energyBurnt, energyConsumed } from ".";
-import { resultEquation } from "./results";
+import { displayResults } from "./results";
 
 const container = document.querySelector('.container');
 let calOrKil = '';
@@ -119,7 +119,7 @@ export function handleForm (){
             energyConsumed.total = (Number(energyConsumed.monday) + Number(energyConsumed.tuesday) + Number(energyConsumed.wednesday) + Number(energyConsumed.thursday) + Number(energyConsumed.friday) + Number(energyConsumed.saturday) + Number(energyConsumed.sunday));
             
             container.innerHTML = '';
-            resultEquation();
+            displayResults();
         }
 
     })
